@@ -1,6 +1,8 @@
 /* sm */
-@media (min-width: 576px) {
- 
+@media (min-width: 576px ){
+    #home{
+        background-position: 50% 0px;
+    }
 }
 /* md */
 @media (min-width: 768px) {
@@ -13,4 +15,9 @@
 /* xl */
 @media (min-width: 1200px) {
   
+}
+@media(max-width:768px){
+    .mouse-icon{
+        display: none;
+    }
 }
