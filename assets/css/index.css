@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
   
 }
+h2{
+    font-size: 30px;
+    margin:0 0 30px;
+    letter-spacing: 5px;
+}
 /* module */
 .module-image {
   padding: 0;
@@ -22,6 +27,37 @@ body {
 
 .module-white {
   background: #fff;
+}
+.module-header{
+    margin: 0 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.module-title {
+	position: relative;
+	margin-bottom: 50px;
+	font-weight: 300;
+    color: #5b5963;
+}
+.module-title span{
+    position:absolute;
+    left:0;
+    right:0;
+    font-size: 100px;
+    top:-40px;
+    opacity:0.05;
+    z-index: 0;
+    text-align: center;
+    font-weight: 700;   
+}
+
+.module-line {
+	background: #666;
+	width: 55px;
+	height: 1px;
+	margin: 30px auto;
 }
 /* section home */
 #home {
@@ -111,11 +147,23 @@ h1{
         transform:translateY(0.5rem);
     }
 }
+.custom-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
 /* nav */
+nav{
+    z-index:99;
+    background-color: white;
+}
 .navbar-brand{
     color:#5b5963;
     font-weight: 700;
     font-size: 18px;
+    letter-spacing: 3px;
+   
 }
 .navbar-brand:hover{
     text-decoration: none;
@@ -137,6 +185,7 @@ ul {
     margin: 0;
     padding: 0;
     display:block;
+    width:100%
   }
 li{
     float: left;
@@ -160,7 +209,7 @@ ul a:hover,li a:active,li a:focus{
 ul a:focus{
     outline:none;
 }
-/* .navbar-toggler {
+.navbar-toggler {
     position: relative;
     float: right;
     padding: 9px 10px;
@@ -170,6 +219,62 @@ ul a:focus{
     background-color: transparent;
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 4px; */
+    border-radius: 4px;
+    background: #fff; 
+}
+.navbar-toggler-icon{
+    display: block;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.row{
+    display: block;
+}
+/* filter */
+#filter {
+	list-style-type: none;
+	text-align: center;
+	margin: 0 0 40px 0;
+    padding: 0;
+    justify-content: center;
+}
 
+#filter li {
+	background: #f5f5f5;
+	display: inline-block;
+	font: 400 13px/1.2 'Poppins', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 8px 20px;
+	margin: 5px;
+	color: #5b5963;
+	cursor: pointer;	
+}
+
+#filter li:hover,#filter li.active,#filter li:focus{
+    background: rgba(253,115,90,1);
+    color:white;
+}
+/* Grid and portfolio items */
+.list-items-container {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+    margin: 0;
+    height: 780px;
+}
+
+.list-items-container .list-item {
+	display: block;
+	list-style: outside none none;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	width: 33.333%;
+}
+.list-items-container .list-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 

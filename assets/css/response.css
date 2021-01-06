@@ -3,14 +3,19 @@
     #home{
         background-position: 50% 0px;
     }
+    
 }
 /* md */
 @media (min-width: 768px) {
-  
+    .container{
+        width: 750px ;
+    }
 }
 /* lg */
 @media (min-width: 992px) {
-  
+    .container{
+        width: 970px ;
+    }
 }
 /* xl */
 @media (min-width: 1200px) {
