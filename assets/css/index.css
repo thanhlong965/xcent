@@ -201,7 +201,7 @@ ul a{
     text-decoration: none;
     line-height: 20px;
 }
-ul a:hover,li a:active,li a:focus{
+ul a:hover,li a:active,li a:focus,ul li.active{
     background-color: tomato;
     text-decoration: none;
     color:white;
@@ -226,9 +226,7 @@ ul a:focus{
     display: block;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-.row{
-    display: block;
-}
+
 /* filter */
 #filter {
 	list-style-type: none;
@@ -277,4 +275,100 @@ ul a:focus{
 	width: 100%;
 	height: auto;
 }
+/* service */
+.iconbox{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 50px 20px;
+    max-width: 340px;
+    margin: 30px auto;
+    box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+}
+.iconbox-icon{
+    background-color: white ;
+    color: rgba(253,115,90,1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -35px; 
+    height:80px;
+    width:80px;
+    margin:0 auto;
+    display: block;
+    line-height: 80px;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+}
+.iconbox-text{
+    padding-top: 30px;
+}
+.icon-title{
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 13px !important;
+    letter-spacing: 1px;
+    font: 700 40px/1.2 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.side-image{
+    position: absolute;
+    background-image: url(/assets/image/about.jpg );
+    background-size: cover;
+    height: 100%;
+   
+}
+.side-image-text{
+    background: #fff;
+    padding: 100px 60px 50px;
+}
+.iconboxleft{
+    position: relative;
+    margin: 0 0 50px;
+}
+.iconboxleft-icon{
+    position: absolute;
+    width: 55px;
+    left: 0;
+    right: 0;
+    font-size: 32px;
+    line-height: 1;
+    color: rgba(253,115,90,1);
+}
+.iconboxleft-text {
+	padding-left: 55px;
+}
+.iconboxleft-title {
+	margin: 0 0 15px;
+    padding: 0;
+    font-size: 13px !important;
+    letter-spacing: 1px;
+    font: 700 40px/1.2 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.container_square {
+    width: 100%;
+    padding-top:85%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+  }
+  
+  /* If you want text inside of the container */
+  .square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+  }
+  .square img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+
+
 
