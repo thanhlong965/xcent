@@ -32,7 +32,6 @@ h2{
     margin: 0 0 50px;
     text-align: center;
     text-transform: uppercase;
-    
 }
 
 .module-title {
@@ -58,6 +57,17 @@ h2{
 	width: 55px;
 	height: 1px;
 	margin: 30px auto;
+}
+.module-icon{
+    font-size: 32px;
+    color: rgba(253,115,90,1);
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -4px 1px 13px rgba(0,0,0,0.1);
 }
 /* section home */
 #home {
@@ -368,7 +378,10 @@ ul a:focus{
       height: 100%;
       object-fit: cover;
   }
-
+  /* testimony */
+#testimonial{
+    text-align: center;
+}
 
 
 
