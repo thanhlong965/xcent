@@ -170,12 +170,15 @@ h1 {
 nav {
   z-index: 99;
   background-color: white;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s ease 0s;
 }
 .navbar-brand {
   color: #5b5963;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 3px;
+  transition: all 0.5s ease 0s;
 }
 .navbar-brand:hover {
   text-decoration: none;
@@ -207,16 +210,18 @@ ul a {
   display: block;
   text-align: center;
   padding: 15px !important;
-  color: black;
   font-size: 11px;
   letter-spacing: 3px;
   text-decoration: none;
   line-height: 20px;
+  color: #5b5963;
+  transition: all 0.5s ease 0s;
 }
 .navbar ul a:hover,
 .navbar li a:active,
 .navbar li a:focus,
-.navbar ul li.active {
+.navbar li a.focus,
+.navbar ul li a.active {
   background-color: tomato;
   text-decoration: none;
   color: white;
@@ -468,25 +473,44 @@ button .close {
   text-align: center;
 }
 /* blog */
-#blog .d-flex{
-    margin-right: -15px;
-    margin-left: -15px;
+#blog .d-flex {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 .blogList {
   display: block;
-  background: #fff none repeat scroll 0 0 ;
-  margin:30px auto;
+  background: #fff none repeat scroll 0 0;
+  margin: 30px auto;
   max-width: 340px;
-  box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+  box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
   position: relative;
-  
-  
+  transition: all 0.3s ease 0s;
 }
-.blogList:hover, .blogList:focus {
-    text-decoration: none;
-    color:white;
-    outline: none;
-    text-decoration: none;
+.blogList:hover,
+.blogList:focus {
+  text-decoration: none;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  margin-top: 25px;
+}
+.blogList:hover .blogList-img span {
+  background-color: rgba(253, 115, 90, 1);
+  color: white;
+}
+.blogList-img {
+  position: relative;
+}
+.blogList-img span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 3px 10px;
+  box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
+  color: #429f98;
+  transition: all 0.5s ease 0s;
 }
 .blogList img {
   height: 240px;
@@ -499,14 +523,90 @@ button .close {
   color: #5b5963;
 }
 .blogList-desc h3 {
-  font: 700 40px/1.2 'Poppins', sans-serif;
+  font: 700 40px/1.2 "Poppins", sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
-  margin: 0 0 5px;  
+  margin: 0 0 5px;
   text-transform: uppercase;
   margin-bottom: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  
+}
+.view-more {
+  background-color: rgba(253, 115, 90, 1);
+  color: white;
+  text-align: center;
+  display: block;
+  font: 400 13px/1.2 "Poppins", sans-serif;
+  padding: 10px 20px;
+  max-width: 170px;
+  margin: 10px auto;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out 0s;
+}
+.view-more:hover,
+.view-more:focus {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+#map-section {
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+
+#map {
+  height: 450px;
+  width: 100%;
+}
+
+.ajax-response {
+  text-align: center;
+}
+/* contact */
+.form-control {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  padding: 0 15px;
+}
+.form-control:focus {
+  border-color: #666;
+  box-shadow: none;
+}
+textarea {
+  margin: 0px -1.48438px 0px 0px;
+  width: 557px;
+  height: 142px;
+  padding: 15px;
+}
+/* social-link */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  background: #333;
+}
+.social-link {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.social-link li {
+  display: inline-block;
+  margin: 5px;
+}
+.social-link a {
+  width: 36px;
+  height: 36px;
+  display: block;
+  line-height: 37px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
 }
