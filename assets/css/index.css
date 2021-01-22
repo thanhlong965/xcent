@@ -172,6 +172,10 @@ nav {
   background-color: white;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.5s ease 0s;
+  
+}
+.nav{
+  flex-wrap: nowrap;
 }
 .navbar-brand {
   color: #5b5963;
@@ -179,6 +183,9 @@ nav {
   font-size: 18px;
   letter-spacing: 3px;
   transition: all 0.5s ease 0s;
+  padding:15px;
+  line-height: 20px;
+  margin: 0;
 }
 .navbar-brand:hover {
   text-decoration: none;
@@ -254,6 +261,7 @@ ul a:focus {
   margin: 0 0 40px 0;
   padding: 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #filter li {
@@ -347,12 +355,26 @@ ul a:focus {
 }
 .modal-content {
   height: 100%;
+  background: black;
 }
 .modal-body {
   padding: 0;
 }
-button .close {
-  padding: 0 100px;
+
+ .close {
+  color: white ;
+  opacity: 0.8;
+  width:380px;
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 30px;
+}
+.close:hover{
+  color: white;
+  opacity: 0.8;
+}
+.close:focus{
+  outline: none;
 }
 #demo {
   padding: 0;
@@ -362,6 +384,7 @@ button .close {
   padding: 0;
   outline: none;
   height: 100%;
+  text-align: center;
 }
 .carousel-item {
   height: 100%;
@@ -378,6 +401,15 @@ button .close {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.carousel-note{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  opacity: 1;
 }
 /* service */
 .iconbox {
